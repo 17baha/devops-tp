@@ -16,9 +16,9 @@ jobs:
         with:
           python-version: '3.x'
       - name: Install Dependencies
-        run: pip install -r hello-devops/requirements.txt
+        run: pip install -r requirements.txt
       - name: Run Tests
-        run: python -m unittest discover -s hello-devops
+        run: python -m unittest discover -s .
 
   deploy:
     runs-on: ubuntu-latest
